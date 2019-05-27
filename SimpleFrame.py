@@ -26,7 +26,7 @@ ret = SapModel.PropMaterial.SetMPIsotropic('BALSA', 1962, 0.3, 1.170E-05)
 
 #define rectangular frame section property
 #(name, material property, section depth, section width)
-ret = SapModel.PropFrame.SetRectangle('R1', 'CONC', 10, 10)
+ret = SapModel.PropFrame.SetRectangle('R1', 'BALSA', 10, 10)
 
 #define frame section property modifiers
 #[cross section area,shear area in local 2 direction, '' in local 3 directionm torsional constant, 
