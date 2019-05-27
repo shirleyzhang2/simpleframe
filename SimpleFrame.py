@@ -62,7 +62,7 @@ Restraint = [True, True, True, True, True, True]
 ret = SapModel.PointObj.SetRestraint(PointName1, Restraint)
 
 #assign point object restraint at right base node
-Restraint = [True, True, False, False, False, False]
+Restraint = [True, True, True, True, True, True]
 [ret, PointName1, PointName2] = SapModel.FrameObj.GetPoints(FrameName3, PointName1, PointName2)
 ret = SapModel.PointObj.SetRestraint(PointName2, Restraint)
 #refresh view, update (initialize) zoom
