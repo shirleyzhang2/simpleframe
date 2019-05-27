@@ -17,12 +17,12 @@ SapModel.InitializeNewModel()
 ret = SapModel.File.NewBlank()
 
 #define material property
-MATERIAL_CONCRETE = 2
-ret = SapModel.PropMaterial.SetMaterial('CONC', MATERIAL_CONCRETE)
+MATERIAL_NODESIGN = 3
+ret = SapModel.PropMaterial.SetMaterial('BALSA', MATERIAL_NODESIGN)
 
-#assign isotropic mechanical properties to material (concrete for now)
+#assign isotropic mechanical properties to material
 #(Name, modulus of elasticity, poisson's ratio, thermal coefficient)
-ret = SapModel.PropMaterial.SetMPIsotropic('CONC', 3600, 0.2, 0.0000055)
+ret = SapModel.PropMaterial.SetMPIsotropic('BALSA', 1962, 0.3, 1.170E-05)
 
 #define rectangular frame section property
 #(name, material property, section depth, section width)
